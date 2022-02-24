@@ -1,0 +1,12 @@
+certifi==2021.10.8
+charset-normalizer==2.0.12
+Deprecated==1.2.13
+gazu==0.8.26
+idna==3.3
+python-engineio==3.14.2
+python-socketio==4.6.1
+requests==2.26.0
+six==1.16.0
+urllib3==1.26.8
+websocket-client==1.2.3
+wrapt==1.13.3

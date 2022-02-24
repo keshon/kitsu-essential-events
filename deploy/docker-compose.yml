@@ -1,0 +1,20 @@
+version: '3.3'
+services:
+  app:
+    container_name: ${ALIAS}-app
+    image: ${ALIAS}-image
+    restart: always
+    tty: true
+    environment:
+      KITSU_URL: ${KITSU_URL}
+      KITSU_LOGIN: ${KITSU_LOGIN}
+      KITSU_PASSWORD: ${KITSU_PASSWORD}
+      EXCLUDE_EVENTS: ${EXCLUDE_EVENTS}
+      LANG: ${LANG}
+    networks:
+      - proxy
+
+networks:
+  # Change if you're using another network
+  proxy:
+    external: true
