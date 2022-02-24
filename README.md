@@ -11,7 +11,7 @@ This event sets next task in pipeline to status **Ready to Work** if the current
 **Requirements:** a new status **Ready to Work** with short name **rtw** should be created
 
 **Demo:**
-![demo](demo/rtw.gif)
+<kbd>![demo](demo/rtw.gif)</kbd>
 
 ### delta - Commenting Plan/Actual task duration
 Whenever you close task with **Done** status there will be a comment published noting if the task was completed ahead of plannig or delayed.
@@ -19,11 +19,29 @@ Whenever you close task with **Done** status there will be a comment published n
 **Requirements:** task(s) must have `start date` and `end date` set.
 
 **Demo:**
-![demo](demo/delta.gif)
+<kbd>![demo](demo/delta.gif)</kbd>
 *In this demonstation the task was closed (via DONE) the next day of plan deadline*
 
 ### lock - Prevent skipping tasks
 It disallow jumping over tasks in **TODO** status.
 
 **Demo:**
-![demo](demo/lock.gif)
+<kbd>![demo](demo/lock.gif)</kbd>
+
+## Docker
+To deploy app via Docker:
+1. docker-compose and Traefik is installed
+2. Go to `deploy` dir
+3. Update kitsu credentials in `.evn` file.
+4. `bash build-and-deploy.sh` - exec supplied shell script that will download latest sources, build Docker image and run it via docker-compose.
+
+## What is Kitsu?
+Kitsu is a production task tracker for small to midsize animation studios made by CG Wire company based in France.
+
+The software is lightweight and simple with the easiest learning curve of the competition and it provides all nessesary tools to get the job done.
+
+Visit [cg-wire.com](https://cg-wire.com) for more information.
+
+Official [Discord server](https://discord.com/invite/VbCxtKN)
+
+[![CGWire Logo](https://zou.cg-wire.com/cgwire.png)](https://cgwire.com)
